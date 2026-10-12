@@ -48,6 +48,24 @@ WER (%) is measured by the demo's light normalization, so it can differ from the
 | `masc/v_Ma1Vf_wDs_76.52.wav` | MASC noisy | random (seed 0) | 2.3 | 20.0 | 20.0 |
 | `masc/N08RYJvOPqU_25.252.wav` | MASC noisy | random (seed 0) | 9.5 | 23.5 | 23.5 |
 
+### Why can WER exceed 100%?
+
+WER is calculated as
+
+> WER = (substitutions + deletions + insertions) ÷ number of words in the reference
+
+The divisor is the length of the reference, but the number of insertions has no upper limit. When a system gets stuck in a repetition loop, every extra word counts as an error.
+
+For example, in `masc/lIPSYpbkgbk_374.57.wav`:
+
+| | Text | Words | WER |
+|---|---|---|---|
+| Reference | القران ثم قالت اقرؤوا | 4 | |
+| Greedy | وَلَقَدْ قَدْ قَدْ قَدْ قَدْ … ("قد" repeated) | 57 | **1425%** (about 57 errors ÷ 4 words) |
+| Sygma | القرآن، ثم قالت | 3 | **25%** (1 missing word ÷ 4 words) |
+
+Below 100%, WER is roughly the share of words that are wrong. Above 100%, the output contains more erroneous words than the speech itself, usually because of a loop. One such loop can outweigh dozens of clips with small errors. This is why reducing breakdowns matters for the average: across the six test sets, greedy decoding produced 155 of them and Sygma-reward 39.
+
 Most of Sygma's large gains come from greedy decoding getting stuck in a repetition loop, for example a word repeated dozens of times. Sygma's losses are mostly on very short clips (2–3 s), where the per-word reward adds extra words.
 
 ### Sources and licences

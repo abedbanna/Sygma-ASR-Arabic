@@ -60,7 +60,7 @@ A *breakdown* is an output stuck in a loop or consisting only of symbols, for ex
 
 ### Illustrations
 
-[`test_audio/`](test_audio/) contains real clips that **illustrate** these effects. They do not prove them, because they were selected to show large differences in both directions. Examples include a MASC clip where greedy decoding loops (1425% WER) and Sygma-reward gives 25%, and a 2-second clip where Sygma-reward adds words (333% vs 0%).
+[`test_audio/`](test_audio/) contains real clips that **illustrate** these effects. They do not prove them, because they were selected to show large differences in both directions. Examples include a MASC clip where greedy decoding loops (1425% WER; see [why WER can exceed 100%](test_audio/README.md#why-can-wer-exceed-100)) and Sygma-reward gives 25%, and a 2-second clip where Sygma-reward adds words (333% vs 0%).
 
 ## Usage
 
