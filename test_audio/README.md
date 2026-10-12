@@ -7,7 +7,9 @@ The folder has two parts:
 1. `benchmark_samples/`: 18 clips from the public test sets used in the paper. Only Common Voice and MASC clips are included, because their licences allow redistribution.
 2. Own recordings (`1.wav`, `2.wav`, `3.wav`, `6.wav`): Jordanian Arabic read by one of the authors. Reference transcripts are in `own_recordings.csv`.
 
-## Benchmark samples
+## Benchmark samples (illustrations, not evidence)
+
+For the statistical evidence, see the *Evidence* section of the [main README](../README.md). It is based on 46,654 clips, with confidence intervals.
 
 ### How the clips were selected
 

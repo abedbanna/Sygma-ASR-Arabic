@@ -10,17 +10,57 @@ Paper: *Sygma ASR Arabic: Improving Dialectal Speech Recognition through Length-
 | Interactive demo | https://huggingface.co/spaces/abedbanna/Sygma-ASR-Arabic-demo |
 | Test audio | [`test_audio/`](test_audio/) |
 
-## Main result
+## Evidence: does Sygma make a difference?
 
-These results cover six public test sets from the Open Universal Arabic ASR Leaderboard (SADA, Common Voice 18, MASC clean and noisy, MGB-2, Casablanca). The audio was rebuilt from public mirrors, the scoring uses the leaderboard's own normalization, and "mean" is the unweighted mean of the six corpus-level WERs.
+The evidence comes from the full evaluation in the paper: **46,654 clips** from six public test sets of the Open Universal Arabic ASR Leaderboard. The pretrained base model and the audio are identical for every decoding configuration, so any difference is caused by decoding alone. All numbers are reproducible from the released predictions (see *Reproducing the paper's tables* below).
 
-| Decoding | Mean WER |
+### 1. Word error rate goes down on every test set
+
+| Test set | Greedy (base model as published) | **Sygma-reward** | Difference (95% CI) |
+|---|---|---|---|
+| SADA (Saudi TV) | 36.57% | **33.68%** | −2.89 [−3.96, −1.98] |
+| MGB-2 (broadcast news) | 15.19% | **13.56%** | −1.64 [−2.31, −1.04] |
+| Casablanca (multi-dialect) | 45.70% | **44.75%** | −0.95 [−1.45, −0.52] |
+| MASC noisy | 25.78% | **25.13%** | −0.66 [−0.94, −0.38] |
+| MASC clean | 16.33% | **15.95%** | −0.37 [−0.63, −0.15] |
+| Common Voice 18 | 5.41% | **5.26%** | −0.15 [−0.23, −0.07] |
+| **Mean of the six sets** | **24.16%** | **23.05%** | **−1.11 [−1.34, −0.90]** |
+
+The intervals are paired cluster-bootstrap intervals with 10,000 replicates, resampling whole recordings. Every interval excludes zero, so the improvement is statistically significant on every test set. The gain is largest on the hardest, most dialectal and noisiest audio, and smallest on clean read speech.
+
+### 2. Fewer dropped words
+
+Unnormalized beam search prefers short hypotheses that drop words. Sygma's per-word reward counteracts this. Summed over all six test sets (404,449 reference words):
+
+| Decoding | Deletions | Insertions | Substitutions |
+|---|---|---|---|
+| Greedy | 20,885 | 9,796 | 72,628 |
+| Plain 8-best beam search | 28,333 | 6,901 | 68,410 |
+| **Sygma-reward** | **16,290** | 10,358 | 71,791 |
+
+Sygma-reward deletes **22% fewer words than greedy decoding** and **43% fewer than plain beam search**, at the cost of some extra insertions.
+
+### 3. Far fewer decoding breakdowns
+
+A *breakdown* is an output stuck in a loop or consisting only of symbols, for example a word repeated 50 times. A single breakdown can add hundreds of errors to a short clip.
+
+| Decoding | Breakdowns over six test sets |
 |---|---|
-| Greedy, the pretrained base model as published | 24.16% |
-| **Sygma-reward** (8-best + per-word reward, β = 1.0) | **23.05%** (95% CI of the difference: −1.34 to −0.90) |
-| Sygma-filtered (+ breakdown filter) | 23.04% |
+| Greedy | 155 |
+| Sygma-reward | 39 (−75%) |
+| Sygma-filtered (+ breakdown filter) | 18 (−88%) |
 
-The gain is modest on average and comes mostly from hard audio, such as TV broadcasts, noise, music and several speakers. On clean, clearly read speech, Sygma and greedy decoding usually give the same transcript. See the paper for ablations, uncertainty estimates and limitations.
+### What the evidence does *not* show
+
+- **Sygma is not a better acoustic model.** On clean, clearly spoken audio, Sygma and greedy decoding usually give the same transcript. The six random clips in `test_audio/` all tie.
+- **The average gain is modest:** about 1.1 WER points.
+- **Very short clips (under 1 s) can get worse,** because the per-word reward can add a word.
+- **Comparison with other models:** in the same pipeline, the leaderboard's top system, Audar-ASR-V1-Turbo, is clearly better on Saudi speech.
+- **Not official leaderboard results:** these come from our rebuilt evaluation.
+
+### Illustrations
+
+[`test_audio/`](test_audio/) contains real clips that **illustrate** these effects. They do not prove them, because they were selected to show large differences in both directions. Examples include a MASC clip where greedy decoding loops (1425% WER) and Sygma-reward gives 25%, and a 2-second clip where Sygma-reward adds words (333% vs 0%).
 
 ## Usage
 
