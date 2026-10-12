@@ -2,10 +2,11 @@
 
 **Sygma ASR Arabic** is a decoding framework for dialectal Arabic speech recognition, built on the fixed pretrained model [`CohereLabs/cohere-transcribe-arabic-07-2026`](https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026). The model weights are not changed. Instead, Sygma re-ranks the model's 8 best beam-search hypotheses with a per-word reward. This corrects beam search's preference for short outputs that drop words. Optionally, Sygma also filters out degenerate hypotheses, such as words repeated in a loop.
 
-Paper: *Sygma ASR Arabic: Improving Dialectal Speech Recognition through Length-Corrected N-Best Decoding*, by Abedal-kareem Al-banna (Sygma Global) and Basel A. Al-banna (University of Petra). The arXiv link will be added after announcement.
+Paper: *Sygma ASR Arabic: Improving Dialectal Speech Recognition through Length-Corrected N-Best Decoding*, by Abedal-kareem Al-banna (Sygma Global) and Basel A. Al-banna (University of Petra). The preprint is available with DOI [10.13140/RG.2.2.33818.20164](https://doi.org/10.13140/RG.2.2.33818.20164); an arXiv version is pending.
 
 | Resource | Link |
 |---|---|
+| Paper (preprint) | https://doi.org/10.13140/RG.2.2.33818.20164 |
 | Model card, code and paper artifacts | https://huggingface.co/abedbanna/Sygma-ASR-Arabic (tag `paper-v1`) |
 | Interactive demo | https://huggingface.co/spaces/abedbanna/Sygma-ASR-Arabic-demo |
 | Test audio | [`test_audio/`](test_audio/) |
@@ -85,6 +86,19 @@ python analysis/reviewer_analyses.py --art art --out my_results.json    # should
 ```
 
 Details are in [`analysis/README.md`](analysis/README.md).
+
+## Citation
+
+```bibtex
+@misc{albanna2026sygma,
+  author    = {Al-banna, Abedal-kareem and Al-banna, Basel A.},
+  title     = {{Sygma ASR Arabic}: Improving Dialectal Speech Recognition through Length-Corrected {N}-Best Decoding},
+  year      = {2026},
+  publisher = {ResearchGate},
+  doi       = {10.13140/RG.2.2.33818.20164},
+  note      = {Preprint}
+}
+```
 
 ## Licence
 
