@@ -1,0 +1,12 @@
+Sygma ASR Arabic
+Copyright 2026 Sygma
+
+This product includes decoding code by Sygma applied to the model
+"CohereLabs/cohere-transcribe-arabic-07-2026" (https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026),
+Copyright Cohere, licensed under the Apache License, Version 2.0.
+No model weights are modified or redistributed in this repository; they are downloaded from the original repository at runtime.
+
+The directory cohere_asr/ contains model code from the same repository (configuration, modeling,
+processing and tokenization files), Copyright Cohere, Apache License 2.0. Modification by Sygma:
+CohereAsrForConditionalGeneration additionally inherits transformers.generation.GenerationMixin, so that
+generate() works with transformers 4.x. No other changes.

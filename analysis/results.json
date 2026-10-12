@@ -1,0 +1,1786 @@
+{
+ "dev_lennorm": {
+  "nofilter_lambda0.0": 33.71,
+  "nofilter_lambda0.25": 32.5,
+  "nofilter_lambda0.5": 31.52,
+  "nofilter_lambda0.75": 30.95,
+  "nofilter_lambda1.0": 30.54,
+  "nofilter_lambda1.25": 30.34,
+  "nofilter_lambda1.5": 30.33,
+  "nofilter_lambda2.0": 30.13,
+  "nofilter_lambda2.5": 30.06,
+  "nofilter_lambda3.0": 30.08,
+  "nofilter_lambda4.0": 30.2,
+  "nofilter_lambda6.0": 30.39,
+  "filter_lambda0.0": 33.71,
+  "filter_lambda0.25": 32.5,
+  "filter_lambda0.5": 31.52,
+  "filter_lambda0.75": 30.95,
+  "filter_lambda1.0": 30.54,
+  "filter_lambda1.25": 30.34,
+  "filter_lambda1.5": 30.33,
+  "filter_lambda2.0": 30.13,
+  "filter_lambda2.5": 30.06,
+  "filter_lambda3.0": 30.08,
+  "filter_lambda4.0": 30.2,
+  "filter_lambda6.0": 30.39
+ },
+ "dev_lennorm_best": {
+  "nofilter": 2.5,
+  "filter": 2.5
+ },
+ "dev": {
+  "beam_top": 33.71,
+  "beam_filter": 33.71,
+  "beam_bonus": 29.18,
+  "sygma": 29.18
+ },
+ "dev_beta_curve": {
+  "nofilter": {
+   "0.0": 33.71,
+   "0.25": 31.28,
+   "0.5": 29.92,
+   "0.75": 29.37,
+   "1.0": 29.18,
+   "1.25": 29.18,
+   "1.5": 29.19,
+   "2.0": 29.32,
+   "2.5": 29.48,
+   "3.0": 29.51
+  },
+  "filter": {
+   "0.0": 33.71,
+   "0.25": 31.28,
+   "0.5": 29.92,
+   "0.75": 29.37,
+   "1.0": 29.18,
+   "1.25": 29.18,
+   "1.5": 29.19,
+   "2.0": 29.32,
+   "2.5": 29.48,
+   "3.0": 29.51
+  }
+ },
+ "dev_youtube_only_beam_top": 33.57,
+ "test": {
+  "sada_test": {
+   "greedy": {
+    "wer": 36.57,
+    "S": 17082,
+    "D": 8777,
+    "I": 4168,
+    "N": 82107,
+    "degenerate": 110
+   },
+   "beam_top": {
+    "wer": 37.85,
+    "S": 15268,
+    "D": 13228,
+    "I": 2580,
+    "N": 82107,
+    "degenerate": 25
+   },
+   "beam_filter": {
+    "wer": 37.84,
+    "S": 15268,
+    "D": 13216,
+    "I": 2584,
+    "N": 82107,
+    "degenerate": 16
+   },
+   "beam_bonus": {
+    "wer": 33.68,
+    "S": 16708,
+    "D": 7224,
+    "I": 3721,
+    "N": 82107,
+    "degenerate": 32
+   },
+   "sygma": {
+    "wer": 33.6,
+    "S": 16687,
+    "D": 7248,
+    "I": 3653,
+    "N": 82107,
+    "degenerate": 16
+   },
+   "sygma_release": {
+    "wer": 33.58,
+    "S": 16688,
+    "D": 7255,
+    "I": 3626,
+    "N": 82107,
+    "degenerate": 16
+   },
+   "lennorm": {
+    "wer": 34.11,
+    "S": 16989,
+    "D": 7415,
+    "I": 3603,
+    "N": 82107,
+    "degenerate": 61
+   },
+   "lennorm_filter": {
+    "wer": 33.95,
+    "S": 17021,
+    "D": 7326,
+    "I": 3530,
+    "N": 82107,
+    "degenerate": 16
+   },
+   "qwen": {
+    "wer": 33.65,
+    "S": 16861,
+    "D": 6851,
+    "I": 3915,
+    "N": 82107,
+    "degenerate": 16
+   },
+   "nolm_b15": {
+    "wer": 33.71,
+    "S": 16933,
+    "D": 6810,
+    "I": 3938,
+    "N": 82107,
+    "degenerate": 16
+   },
+   "audar_raw": {
+    "wer": 35.52,
+    "S": 16866,
+    "D": 2964,
+    "I": 9335,
+    "N": 82107,
+    "degenerate": 40
+   },
+   "audar_fix": {
+    "wer": 28.24,
+    "S": 16486,
+    "D": 3062,
+    "I": 3641,
+    "N": 82107,
+    "degenerate": 0
+   },
+   "clips": 6087
+  },
+  "commonvoice_test": {
+   "greedy": {
+    "wer": 5.41,
+    "S": 2557,
+    "D": 172,
+    "I": 144,
+    "N": 53104,
+    "degenerate": 0
+   },
+   "beam_top": {
+    "wer": 5.23,
+    "S": 2473,
+    "D": 174,
+    "I": 130,
+    "N": 53104,
+    "degenerate": 0
+   },
+   "beam_filter": {
+    "wer": 5.23,
+    "S": 2473,
+    "D": 174,
+    "I": 130,
+    "N": 53104,
+    "degenerate": 0
+   },
+   "beam_bonus": {
+    "wer": 5.26,
+    "S": 2493,
+    "D": 117,
+    "I": 184,
+    "N": 53104,
+    "degenerate": 0
+   },
+   "sygma": {
+    "wer": 5.26,
+    "S": 2493,
+    "D": 117,
+    "I": 184,
+    "N": 53104,
+    "degenerate": 0
+   },
+   "sygma_release": {
+    "wer": 5.28,
+    "S": 2501,
+    "D": 120,
+    "I": 184,
+    "N": 53104,
+    "degenerate": 0
+   },
+   "lennorm": {
+    "wer": 5.49,
+    "S": 2615,
+    "D": 158,
+    "I": 141,
+    "N": 53104,
+    "degenerate": 3
+   },
+   "lennorm_filter": {
+    "wer": 5.47,
+    "S": 2612,
+    "D": 152,
+    "I": 141,
+    "N": 53104,
+    "degenerate": 0
+   },
+   "qwen": {
+    "wer": 5.31,
+    "S": 2501,
+    "D": 108,
+    "I": 213,
+    "N": 53104,
+    "degenerate": 0
+   },
+   "nolm_b15": {
+    "wer": 5.33,
+    "S": 2508,
+    "D": 108,
+    "I": 212,
+    "N": 53104,
+    "degenerate": 0
+   },
+   "audar_raw": {
+    "wer": 8.13,
+    "S": 3836,
+    "D": 236,
+    "I": 247,
+    "N": 53104,
+    "degenerate": 0
+   },
+   "audar_fix": {
+    "wer": 8.13,
+    "S": 3836,
+    "D": 236,
+    "I": 247,
+    "N": 53104,
+    "degenerate": 0
+   },
+   "clips": 10471
+  },
+  "masc_test_clean": {
+   "greedy": {
+    "wer": 16.33,
+    "S": 9199,
+    "D": 1313,
+    "I": 471,
+    "N": 67274,
+    "degenerate": 4
+   },
+   "beam_top": {
+    "wer": 16.07,
+    "S": 9150,
+    "D": 1394,
+    "I": 266,
+    "N": 67274,
+    "degenerate": 1
+   },
+   "beam_filter": {
+    "wer": 16.07,
+    "S": 9150,
+    "D": 1394,
+    "I": 266,
+    "N": 67274,
+    "degenerate": 0
+   },
+   "beam_bonus": {
+    "wer": 15.95,
+    "S": 9213,
+    "D": 1098,
+    "I": 422,
+    "N": 67274,
+    "degenerate": 0
+   },
+   "sygma": {
+    "wer": 15.95,
+    "S": 9213,
+    "D": 1098,
+    "I": 422,
+    "N": 67274,
+    "degenerate": 0
+   },
+   "sygma_release": {
+    "wer": 15.97,
+    "S": 9216,
+    "D": 1108,
+    "I": 421,
+    "N": 67274,
+    "degenerate": 0
+   },
+   "lennorm": {
+    "wer": 16.01,
+    "S": 9238,
+    "D": 1182,
+    "I": 349,
+    "N": 67274,
+    "degenerate": 2
+   },
+   "lennorm_filter": {
+    "wer": 16.0,
+    "S": 9236,
+    "D": 1180,
+    "I": 349,
+    "N": 67274,
+    "degenerate": 0
+   },
+   "qwen": {
+    "wer": 16.1,
+    "S": 9243,
+    "D": 1060,
+    "I": 525,
+    "N": 67274,
+    "degenerate": 0
+   },
+   "nolm_b15": {
+    "wer": 16.09,
+    "S": 9235,
+    "D": 1055,
+    "I": 532,
+    "N": 67274,
+    "degenerate": 0
+   },
+   "audar_raw": {
+    "wer": 17.2,
+    "S": 9789,
+    "D": 1384,
+    "I": 396,
+    "N": 67274,
+    "degenerate": 0
+   },
+   "audar_fix": {
+    "wer": 17.2,
+    "S": 9789,
+    "D": 1384,
+    "I": 396,
+    "N": 67274,
+    "degenerate": 0
+   },
+   "clips": 8612
+  },
+  "masc_test_noisy": {
+   "greedy": {
+    "wer": 25.78,
+    "S": 13738,
+    "D": 2340,
+    "I": 1053,
+    "N": 66438,
+    "degenerate": 2
+   },
+   "beam_top": {
+    "wer": 25.62,
+    "S": 13383,
+    "D": 2754,
+    "I": 883,
+    "N": 66438,
+    "degenerate": 0
+   },
+   "beam_filter": {
+    "wer": 25.62,
+    "S": 13383,
+    "D": 2754,
+    "I": 883,
+    "N": 66438,
+    "degenerate": 0
+   },
+   "beam_bonus": {
+    "wer": 25.13,
+    "S": 13662,
+    "D": 1663,
+    "I": 1369,
+    "N": 66438,
+    "degenerate": 0
+   },
+   "sygma": {
+    "wer": 25.13,
+    "S": 13662,
+    "D": 1663,
+    "I": 1369,
+    "N": 66438,
+    "degenerate": 0
+   },
+   "sygma_release": {
+    "wer": 25.2,
+    "S": 13687,
+    "D": 1697,
+    "I": 1358,
+    "N": 66438,
+    "degenerate": 0
+   },
+   "lennorm": {
+    "wer": 25.42,
+    "S": 13840,
+    "D": 1878,
+    "I": 1173,
+    "N": 66438,
+    "degenerate": 3
+   },
+   "lennorm_filter": {
+    "wer": 25.41,
+    "S": 13841,
+    "D": 1867,
+    "I": 1173,
+    "N": 66438,
+    "degenerate": 0
+   },
+   "qwen": {
+    "wer": 25.25,
+    "S": 13744,
+    "D": 1527,
+    "I": 1506,
+    "N": 66438,
+    "degenerate": 0
+   },
+   "nolm_b15": {
+    "wer": 25.23,
+    "S": 13731,
+    "D": 1514,
+    "I": 1516,
+    "N": 66438,
+    "degenerate": 0
+   },
+   "audar_raw": {
+    "wer": 28.85,
+    "S": 15303,
+    "D": 2424,
+    "I": 1439,
+    "N": 66438,
+    "degenerate": 7
+   },
+   "audar_fix": {
+    "wer": 28.49,
+    "S": 15304,
+    "D": 2403,
+    "I": 1222,
+    "N": 66438,
+    "degenerate": 0
+   },
+   "clips": 9393
+  },
+  "mgb2_test": {
+   "greedy": {
+    "wer": 15.19,
+    "S": 5826,
+    "D": 3198,
+    "I": 756,
+    "N": 64381,
+    "degenerate": 10
+   },
+   "beam_top": {
+    "wer": 15.86,
+    "S": 5403,
+    "D": 4367,
+    "I": 440,
+    "N": 64381,
+    "degenerate": 1
+   },
+   "beam_filter": {
+    "wer": 15.86,
+    "S": 5403,
+    "D": 4367,
+    "I": 440,
+    "N": 64381,
+    "degenerate": 1
+   },
+   "beam_bonus": {
+    "wer": 13.56,
+    "S": 5704,
+    "D": 2188,
+    "I": 835,
+    "N": 64381,
+    "degenerate": 1
+   },
+   "sygma": {
+    "wer": 13.56,
+    "S": 5704,
+    "D": 2188,
+    "I": 835,
+    "N": 64381,
+    "degenerate": 1
+   },
+   "sygma_release": {
+    "wer": 13.57,
+    "S": 5708,
+    "D": 2196,
+    "I": 834,
+    "N": 64381,
+    "degenerate": 1
+   },
+   "lennorm": {
+    "wer": 13.76,
+    "S": 5676,
+    "D": 2461,
+    "I": 724,
+    "N": 64381,
+    "degenerate": 1
+   },
+   "lennorm_filter": {
+    "wer": 13.76,
+    "S": 5676,
+    "D": 2461,
+    "I": 724,
+    "N": 64381,
+    "degenerate": 1
+   },
+   "qwen": {
+    "wer": 13.48,
+    "S": 5697,
+    "D": 2017,
+    "I": 963,
+    "N": 64381,
+    "degenerate": 1
+   },
+   "nolm_b15": {
+    "wer": 13.57,
+    "S": 5753,
+    "D": 1999,
+    "I": 986,
+    "N": 64381,
+    "degenerate": 1
+   },
+   "audar_raw": {
+    "wer": 12.49,
+    "S": 4924,
+    "D": 2068,
+    "I": 1051,
+    "N": 64381,
+    "degenerate": 2
+   },
+   "audar_fix": {
+    "wer": 12.03,
+    "S": 4914,
+    "D": 2072,
+    "I": 757,
+    "N": 64381,
+    "degenerate": 0
+   },
+   "clips": 5365
+  },
+  "casablanca_test": {
+   "greedy": {
+    "wer": 45.7,
+    "S": 24226,
+    "D": 5085,
+    "I": 3204,
+    "N": 71145,
+    "degenerate": 29
+   },
+   "beam_top": {
+    "wer": 44.63,
+    "S": 22733,
+    "D": 6416,
+    "I": 2602,
+    "N": 71145,
+    "degenerate": 4
+   },
+   "beam_filter": {
+    "wer": 44.59,
+    "S": 22739,
+    "D": 6382,
+    "I": 2604,
+    "N": 71145,
+    "degenerate": 1
+   },
+   "beam_bonus": {
+    "wer": 44.75,
+    "S": 24011,
+    "D": 4000,
+    "I": 3827,
+    "N": 71145,
+    "degenerate": 6
+   },
+   "sygma": {
+    "wer": 44.75,
+    "S": 24010,
+    "D": 4002,
+    "I": 3824,
+    "N": 71145,
+    "degenerate": 1
+   },
+   "sygma_release": {
+    "wer": 44.77,
+    "S": 24010,
+    "D": 4019,
+    "I": 3820,
+    "N": 71145,
+    "degenerate": 1
+   },
+   "lennorm": {
+    "wer": 44.8,
+    "S": 24278,
+    "D": 4208,
+    "I": 3387,
+    "N": 71145,
+    "degenerate": 16
+   },
+   "lennorm_filter": {
+    "wer": 44.74,
+    "S": 24292,
+    "D": 4151,
+    "I": 3387,
+    "N": 71145,
+    "degenerate": 1
+   },
+   "qwen": {
+    "wer": 45.04,
+    "S": 24331,
+    "D": 3604,
+    "I": 4109,
+    "N": 71145,
+    "degenerate": 1
+   },
+   "nolm_b15": {
+    "wer": 45.08,
+    "S": 24369,
+    "D": 3566,
+    "I": 4135,
+    "N": 71145,
+    "degenerate": 1
+   },
+   "audar_raw": {
+    "wer": 56.05,
+    "S": 28385,
+    "D": 3834,
+    "I": 7659,
+    "N": 71145,
+    "degenerate": 41
+   },
+   "audar_fix": {
+    "wer": 50.18,
+    "S": 28302,
+    "D": 3817,
+    "I": 3584,
+    "N": 71145,
+    "degenerate": 0
+   },
+   "clips": 6726
+  },
+  "average": {
+   "greedy": 24.16,
+   "beam_top": 24.21,
+   "beam_filter": 24.2,
+   "beam_bonus": 23.05,
+   "sygma": 23.04,
+   "sygma_release": 23.06,
+   "lennorm": 23.27,
+   "lennorm_filter": 23.22,
+   "qwen": 23.14,
+   "nolm_b15": 23.17,
+   "audar_raw": 26.37,
+   "audar_fix": 24.05
+  }
+ },
+ "n_clusters": {
+  "sada_test": 44,
+  "commonvoice_test": 10471,
+  "masc_test_clean": 108,
+  "masc_test_noisy": 101,
+  "mgb2_test": 17,
+  "casablanca_test": 6010
+ },
+ "bootstrap": {
+  "sygma-greedy": {
+   "sada_test": {
+    "diff": -2.97,
+    "ci95": [
+     -4.03,
+     -2.07
+    ]
+   },
+   "commonvoice_test": {
+    "diff": -0.15,
+    "ci95": [
+     -0.23,
+     -0.07
+    ]
+   },
+   "masc_test_clean": {
+    "diff": -0.37,
+    "ci95": [
+     -0.63,
+     -0.15
+    ]
+   },
+   "masc_test_noisy": {
+    "diff": -0.66,
+    "ci95": [
+     -0.94,
+     -0.38
+    ]
+   },
+   "mgb2_test": {
+    "diff": -1.64,
+    "ci95": [
+     -2.31,
+     -1.04
+    ]
+   },
+   "casablanca_test": {
+    "diff": -0.95,
+    "ci95": [
+     -1.45,
+     -0.52
+    ]
+   },
+   "average": {
+    "diff": -1.12,
+    "ci95": [
+     -1.35,
+     -0.91
+    ]
+   }
+  },
+  "beam_bonus-greedy": {
+   "sada_test": {
+    "diff": -2.89,
+    "ci95": [
+     -3.96,
+     -1.98
+    ]
+   },
+   "commonvoice_test": {
+    "diff": -0.15,
+    "ci95": [
+     -0.23,
+     -0.07
+    ]
+   },
+   "masc_test_clean": {
+    "diff": -0.37,
+    "ci95": [
+     -0.63,
+     -0.15
+    ]
+   },
+   "masc_test_noisy": {
+    "diff": -0.66,
+    "ci95": [
+     -0.94,
+     -0.38
+    ]
+   },
+   "mgb2_test": {
+    "diff": -1.64,
+    "ci95": [
+     -2.31,
+     -1.04
+    ]
+   },
+   "casablanca_test": {
+    "diff": -0.95,
+    "ci95": [
+     -1.45,
+     -0.52
+    ]
+   },
+   "average": {
+    "diff": -1.11,
+    "ci95": [
+     -1.34,
+     -0.9
+    ]
+   }
+  },
+  "beam_filter-greedy": {
+   "sada_test": {
+    "diff": 1.27,
+    "ci95": [
+     0.05,
+     2.33
+    ]
+   },
+   "commonvoice_test": {
+    "diff": -0.18,
+    "ci95": [
+     -0.25,
+     -0.12
+    ]
+   },
+   "masc_test_clean": {
+    "diff": -0.26,
+    "ci95": [
+     -0.53,
+     -0.04
+    ]
+   },
+   "masc_test_noisy": {
+    "diff": -0.17,
+    "ci95": [
+     -0.4,
+     0.06
+    ]
+   },
+   "mgb2_test": {
+    "diff": 0.67,
+    "ci95": [
+     -0.07,
+     1.32
+    ]
+   },
+   "casablanca_test": {
+    "diff": -1.11,
+    "ci95": [
+     -1.61,
+     -0.68
+    ]
+   },
+   "average": {
+    "diff": 0.04,
+    "ci95": [
+     -0.21,
+     0.26
+    ]
+   }
+  },
+  "beam_top-greedy": {
+   "sada_test": {
+    "diff": 1.28,
+    "ci95": [
+     0.06,
+     2.34
+    ]
+   },
+   "commonvoice_test": {
+    "diff": -0.18,
+    "ci95": [
+     -0.25,
+     -0.12
+    ]
+   },
+   "masc_test_clean": {
+    "diff": -0.26,
+    "ci95": [
+     -0.53,
+     -0.04
+    ]
+   },
+   "masc_test_noisy": {
+    "diff": -0.17,
+    "ci95": [
+     -0.4,
+     0.06
+    ]
+   },
+   "mgb2_test": {
+    "diff": 0.67,
+    "ci95": [
+     -0.07,
+     1.32
+    ]
+   },
+   "casablanca_test": {
+    "diff": -1.07,
+    "ci95": [
+     -1.56,
+     -0.66
+    ]
+   },
+   "average": {
+    "diff": 0.04,
+    "ci95": [
+     -0.21,
+     0.27
+    ]
+   }
+  },
+  "sygma-beam_bonus": {
+   "sada_test": {
+    "diff": -0.08,
+    "ci95": [
+     -0.23,
+     -0.01
+    ]
+   },
+   "commonvoice_test": {
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "masc_test_clean": {
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "masc_test_noisy": {
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "mgb2_test": {
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "casablanca_test": {
+    "diff": -0.0,
+    "ci95": [
+     -0.01,
+     0.0
+    ]
+   },
+   "average": {
+    "diff": -0.01,
+    "ci95": [
+     -0.04,
+     -0.0
+    ]
+   }
+  },
+  "sygma-beam_filter": {
+   "sada_test": {
+    "diff": -4.24,
+    "ci95": [
+     -5.43,
+     -3.15
+    ]
+   },
+   "commonvoice_test": {
+    "diff": 0.03,
+    "ci95": [
+     -0.04,
+     0.1
+    ]
+   },
+   "masc_test_clean": {
+    "diff": -0.11,
+    "ci95": [
+     -0.21,
+     -0.01
+    ]
+   },
+   "masc_test_noisy": {
+    "diff": -0.49,
+    "ci95": [
+     -0.82,
+     -0.12
+    ]
+   },
+   "mgb2_test": {
+    "diff": -2.3,
+    "ci95": [
+     -3.26,
+     -1.33
+    ]
+   },
+   "casablanca_test": {
+    "diff": 0.16,
+    "ci95": [
+     -0.1,
+     0.4
+    ]
+   },
+   "average": {
+    "diff": -1.16,
+    "ci95": [
+     -1.42,
+     -0.9
+    ]
+   }
+  },
+  "sygma-lennorm_filter": {
+   "sada_test": {
+    "diff": -0.35,
+    "ci95": [
+     -0.68,
+     -0.06
+    ]
+   },
+   "commonvoice_test": {
+    "diff": -0.21,
+    "ci95": [
+     -0.31,
+     -0.11
+    ]
+   },
+   "masc_test_clean": {
+    "diff": -0.05,
+    "ci95": [
+     -0.15,
+     0.06
+    ]
+   },
+   "masc_test_noisy": {
+    "diff": -0.28,
+    "ci95": [
+     -0.44,
+     -0.14
+    ]
+   },
+   "mgb2_test": {
+    "diff": -0.21,
+    "ci95": [
+     -0.43,
+     0.03
+    ]
+   },
+   "casablanca_test": {
+    "diff": 0.01,
+    "ci95": [
+     -0.18,
+     0.19
+    ]
+   },
+   "average": {
+    "diff": -0.18,
+    "ci95": [
+     -0.26,
+     -0.1
+    ]
+   }
+  },
+  "lennorm_filter-greedy": {
+   "sada_test": {
+    "diff": -2.62,
+    "ci95": [
+     -3.63,
+     -1.76
+    ]
+   },
+   "commonvoice_test": {
+    "diff": 0.06,
+    "ci95": [
+     -0.03,
+     0.16
+    ]
+   },
+   "masc_test_clean": {
+    "diff": -0.32,
+    "ci95": [
+     -0.62,
+     -0.09
+    ]
+   },
+   "masc_test_noisy": {
+    "diff": -0.38,
+    "ci95": [
+     -0.61,
+     -0.12
+    ]
+   },
+   "mgb2_test": {
+    "diff": -1.43,
+    "ci95": [
+     -1.95,
+     -0.98
+    ]
+   },
+   "casablanca_test": {
+    "diff": -0.96,
+    "ci95": [
+     -1.46,
+     -0.55
+    ]
+   },
+   "average": {
+    "diff": -0.94,
+    "ci95": [
+     -1.16,
+     -0.75
+    ]
+   }
+  },
+  "qwen-sygma": {
+   "sada_test": {
+    "diff": 0.05,
+    "ci95": [
+     -0.06,
+     0.18
+    ]
+   },
+   "commonvoice_test": {
+    "diff": 0.05,
+    "ci95": [
+     0.01,
+     0.1
+    ]
+   },
+   "masc_test_clean": {
+    "diff": 0.14,
+    "ci95": [
+     0.06,
+     0.23
+    ]
+   },
+   "masc_test_noisy": {
+    "diff": 0.12,
+    "ci95": [
+     0.05,
+     0.21
+    ]
+   },
+   "mgb2_test": {
+    "diff": -0.08,
+    "ci95": [
+     -0.16,
+     0.02
+    ]
+   },
+   "casablanca_test": {
+    "diff": 0.29,
+    "ci95": [
+     0.19,
+     0.39
+    ]
+   },
+   "average": {
+    "diff": 0.1,
+    "ci95": [
+     0.06,
+     0.14
+    ]
+   }
+  },
+  "qwen-nolm_b15": {
+   "sada_test": {
+    "diff": -0.07,
+    "ci95": [
+     -0.11,
+     -0.02
+    ]
+   },
+   "commonvoice_test": {
+    "diff": -0.01,
+    "ci95": [
+     -0.03,
+     0.01
+    ]
+   },
+   "masc_test_clean": {
+    "diff": 0.01,
+    "ci95": [
+     -0.02,
+     0.03
+    ]
+   },
+   "masc_test_noisy": {
+    "diff": 0.02,
+    "ci95": [
+     -0.02,
+     0.06
+    ]
+   },
+   "mgb2_test": {
+    "diff": -0.09,
+    "ci95": [
+     -0.12,
+     -0.07
+    ]
+   },
+   "casablanca_test": {
+    "diff": -0.04,
+    "ci95": [
+     -0.09,
+     0.01
+    ]
+   },
+   "average": {
+    "diff": -0.03,
+    "ci95": [
+     -0.04,
+     -0.01
+    ]
+   }
+  },
+  "sygma-audar_fix": {
+   "sada_test": {
+    "diff": 5.36,
+    "ci95": [
+     4.26,
+     6.45
+    ]
+   },
+   "commonvoice_test": {
+    "diff": -2.87,
+    "ci95": [
+     -3.13,
+     -2.62
+    ]
+   },
+   "masc_test_clean": {
+    "diff": -1.24,
+    "ci95": [
+     -1.57,
+     -0.91
+    ]
+   },
+   "masc_test_noisy": {
+    "diff": -3.36,
+    "ci95": [
+     -4.17,
+     -2.56
+    ]
+   },
+   "mgb2_test": {
+    "diff": 1.53,
+    "ci95": [
+     0.36,
+     2.46
+    ]
+   },
+   "casablanca_test": {
+    "diff": -5.44,
+    "ci95": [
+     -5.94,
+     -4.93
+    ]
+   },
+   "average": {
+    "diff": -1.0,
+    "ci95": [
+     -1.32,
+     -0.71
+    ]
+   }
+  },
+  "beam_bonus-audar_fix": {
+   "sada_test": {
+    "diff": 5.44,
+    "ci95": [
+     4.35,
+     6.51
+    ]
+   },
+   "commonvoice_test": {
+    "diff": -2.87,
+    "ci95": [
+     -3.13,
+     -2.62
+    ]
+   },
+   "masc_test_clean": {
+    "diff": -1.24,
+    "ci95": [
+     -1.57,
+     -0.91
+    ]
+   },
+   "masc_test_noisy": {
+    "diff": -3.36,
+    "ci95": [
+     -4.17,
+     -2.56
+    ]
+   },
+   "mgb2_test": {
+    "diff": 1.53,
+    "ci95": [
+     0.36,
+     2.46
+    ]
+   },
+   "casablanca_test": {
+    "diff": -5.43,
+    "ci95": [
+     -5.94,
+     -4.92
+    ]
+   },
+   "average": {
+    "diff": -0.99,
+    "ci95": [
+     -1.31,
+     -0.7
+    ]
+   }
+  },
+  "beam_bonus-lennorm": {
+   "sada_test": {
+    "diff": -0.43,
+    "ci95": [
+     -0.77,
+     -0.13
+    ]
+   },
+   "commonvoice_test": {
+    "diff": -0.23,
+    "ci95": [
+     -0.33,
+     -0.13
+    ]
+   },
+   "masc_test_clean": {
+    "diff": -0.05,
+    "ci95": [
+     -0.16,
+     0.05
+    ]
+   },
+   "masc_test_noisy": {
+    "diff": -0.3,
+    "ci95": [
+     -0.45,
+     -0.15
+    ]
+   },
+   "mgb2_test": {
+    "diff": -0.21,
+    "ci95": [
+     -0.43,
+     0.03
+    ]
+   },
+   "casablanca_test": {
+    "diff": -0.05,
+    "ci95": [
+     -0.25,
+     0.15
+    ]
+   },
+   "average": {
+    "diff": -0.21,
+    "ci95": [
+     -0.29,
+     -0.13
+    ]
+   }
+  }
+ },
+ "nondegenerate_intersection": {
+  "sada_test": {
+   "clips": 5948,
+   "greedy": 33.92,
+   "sygma": 32.45,
+   "audar_raw": 27.52,
+   "audar_fix": 27.52
+  },
+  "commonvoice_test": {
+   "clips": 10471,
+   "greedy": 5.41,
+   "sygma": 5.26,
+   "audar_raw": 8.13,
+   "audar_fix": 8.13
+  },
+  "masc_test_clean": {
+   "clips": 8608,
+   "greedy": 16.24,
+   "sygma": 15.95,
+   "audar_raw": 17.19,
+   "audar_fix": 17.19
+  },
+  "masc_test_noisy": {
+   "clips": 9384,
+   "greedy": 25.75,
+   "sygma": 25.11,
+   "audar_raw": 28.48,
+   "audar_fix": 28.48
+  },
+  "mgb2_test": {
+   "clips": 5353,
+   "greedy": 14.99,
+   "sygma": 13.54,
+   "audar_raw": 11.99,
+   "audar_fix": 11.99
+  },
+  "casablanca_test": {
+   "clips": 6660,
+   "greedy": 44.86,
+   "sygma": 44.37,
+   "audar_raw": 49.83,
+   "audar_fix": 49.83
+  }
+ },
+ "sada_by_duration": {
+  "0-5s": {
+   "clips": 3960,
+   "greedy": 42.07,
+   "beam_top": 40.62,
+   "beam_bonus": 39.99,
+   "sygma": 39.71,
+   "audar_fix": 33.65
+  },
+  "5-10s": {
+   "clips": 1036,
+   "greedy": 35.86,
+   "beam_top": 37.62,
+   "beam_bonus": 31.47,
+   "sygma": 31.43,
+   "audar_fix": 27.48
+  },
+  "10-20s": {
+   "clips": 641,
+   "greedy": 40.65,
+   "beam_top": 45.76,
+   "beam_bonus": 33.87,
+   "sygma": 33.86,
+   "audar_fix": 26.04
+  },
+  "20-31s": {
+   "clips": 409,
+   "greedy": 30.07,
+   "beam_top": 30.36,
+   "beam_bonus": 30.31,
+   "sygma": 30.31,
+   "audar_fix": 26.33
+  }
+ },
+ "detector_audit": {
+  "sada_test": {
+   "references_flagged": 8,
+   "references": 6087,
+   "greedy_flagged": 110,
+   "greedy_flagged_with_wer_le_50": 17,
+   "examples_flagged_refs": [
+    "لا لا لا لا لا لا مو معقول يا شباب",
+    "هلا هلا هلا ضحية ضحية جديد يا هلا هلا هلا هه",
+    "دوم دوم دوم تتاكدون دوم دوم تك اها دوم دوم تك",
+    "حياكم الله تموا بسم الله الله يحييك الله يحييكم الله يحييك الله بسم الله",
+    "بشويش بشويش بشويش بشويش بشويش بشويش بشويش بشويش بشويش بسم الله عليك يا فهد سمي يوبا يا سعد يا ولدي روح نام"
+   ],
+   "filter_changed_choice": 16,
+   "filter_changed_wer_bonus_only": 100.0,
+   "filter_changed_wer_sygma": 61.99
+  },
+  "commonvoice_test": {
+   "references_flagged": 1,
+   "references": 10471,
+   "greedy_flagged": 0,
+   "greedy_flagged_with_wer_le_50": 0,
+   "examples_flagged_refs": [
+    "بالعــــــــــــــــزّ والأمــــــــــــــــان"
+   ],
+   "filter_changed_choice": 0,
+   "filter_changed_wer_bonus_only": null,
+   "filter_changed_wer_sygma": null
+  },
+  "masc_test_clean": {
+   "references_flagged": 1,
+   "references": 8612,
+   "greedy_flagged": 4,
+   "greedy_flagged_with_wer_le_50": 2,
+   "examples_flagged_refs": [
+    "و راحه و طمانينه و سعاده و قرب و امل و تفاؤل"
+   ],
+   "filter_changed_choice": 0,
+   "filter_changed_wer_bonus_only": null,
+   "filter_changed_wer_sygma": null
+  },
+  "masc_test_noisy": {
+   "references_flagged": 1,
+   "references": 9393,
+   "greedy_flagged": 2,
+   "greedy_flagged_with_wer_le_50": 0,
+   "examples_flagged_refs": [
+    "هيا هيا السندوتشات جاهزه هيا بنا هيا هيا هيا"
+   ],
+   "filter_changed_choice": 0,
+   "filter_changed_wer_bonus_only": null,
+   "filter_changed_wer_sygma": null
+  },
+  "mgb2_test": {
+   "references_flagged": 0,
+   "references": 5365,
+   "greedy_flagged": 10,
+   "greedy_flagged_with_wer_le_50": 3,
+   "examples_flagged_refs": [],
+   "filter_changed_choice": 0,
+   "filter_changed_wer_bonus_only": null,
+   "filter_changed_wer_sygma": null
+  },
+  "casablanca_test": {
+   "references_flagged": 4,
+   "references": 6726,
+   "greedy_flagged": 29,
+   "greedy_flagged_with_wer_le_50": 3,
+   "examples_flagged_refs": [
+    "ههههههههههههههه",
+    " لا لا لا لا لا لا قلت لك ماينفعش ",
+    "يلا أبوي، يلا يلا يلا يلا يلا، جان ما تطير عنا الطيارة يلا أبوي",
+    "تتصرف بنفس التصرف بالكف بالكف بالكف بالكف بالكف بالكف"
+   ],
+   "filter_changed_choice": 5,
+   "filter_changed_wer_bonus_only": 80.0,
+   "filter_changed_wer_sygma": 75.0
+  }
+ },
+ "reconstruction": {
+  "sada_test": {
+   "manifest_rows": 6189,
+   "matched": 6087,
+   "missing": 102,
+   "rows_with_shared_text": 305,
+   "rows_with_shared_text_and_duration_within_0.1s": 177,
+   "missing_mean_duration": 17.55,
+   "all_mean_duration": 6.25,
+   "missing_mean_words": 35.63,
+   "all_mean_words": 13.92
+  },
+  "casablanca_test": {
+   "manifest_rows": 6726,
+   "matched": 6726,
+   "missing": 0,
+   "rows_with_shared_text": 52,
+   "rows_with_shared_text_and_duration_within_0.1s": 12,
+   "missing_mean_duration": null,
+   "all_mean_duration": 4.12,
+   "missing_mean_words": null,
+   "all_mean_words": 11.16
+  }
+ },
+ "sensitivity_no_ambiguous": {
+  "sada_test": {
+   "clips": 5911,
+   "greedy": 36.52,
+   "beam_bonus": 33.63,
+   "sygma": 33.55,
+   "lennorm_filter": 33.87,
+   "audar_fix": 28.25
+  },
+  "commonvoice_test": {
+   "clips": 10471,
+   "greedy": 5.41,
+   "beam_bonus": 5.26,
+   "sygma": 5.26,
+   "lennorm_filter": 5.47,
+   "audar_fix": 8.13
+  },
+  "masc_test_clean": {
+   "clips": 8612,
+   "greedy": 16.33,
+   "beam_bonus": 15.95,
+   "sygma": 15.95,
+   "lennorm_filter": 16.0,
+   "audar_fix": 17.2
+  },
+  "masc_test_noisy": {
+   "clips": 9393,
+   "greedy": 25.78,
+   "beam_bonus": 25.13,
+   "sygma": 25.13,
+   "lennorm_filter": 25.41,
+   "audar_fix": 28.49
+  },
+  "mgb2_test": {
+   "clips": 5365,
+   "greedy": 15.19,
+   "beam_bonus": 13.56,
+   "sygma": 13.56,
+   "lennorm_filter": 13.76,
+   "audar_fix": 12.03
+  },
+  "casablanca_test": {
+   "clips": 6714,
+   "greedy": 45.61,
+   "beam_bonus": 44.67,
+   "sygma": 44.66,
+   "lennorm_filter": 44.65,
+   "audar_fix": 50.12
+  },
+  "average": {
+   "greedy": 24.14,
+   "beam_bonus": 23.03,
+   "sygma": 23.02,
+   "lennorm_filter": 23.19,
+   "audar_fix": 24.04
+  },
+  "removed": {
+   "sada_test": 177,
+   "casablanca_test": 12
+  },
+  "bootstrap": {
+   "beam_bonus-greedy": {
+    "sada_test": {
+     "diff": -2.89,
+     "ci95": [
+      -3.97,
+      -1.97
+     ]
+    },
+    "commonvoice_test": {
+     "diff": -0.15,
+     "ci95": [
+      -0.23,
+      -0.07
+     ]
+    },
+    "masc_test_clean": {
+     "diff": -0.37,
+     "ci95": [
+      -0.63,
+      -0.15
+     ]
+    },
+    "masc_test_noisy": {
+     "diff": -0.66,
+     "ci95": [
+      -0.94,
+      -0.38
+     ]
+    },
+    "mgb2_test": {
+     "diff": -1.64,
+     "ci95": [
+      -2.32,
+      -1.04
+     ]
+    },
+    "casablanca_test": {
+     "diff": -0.94,
+     "ci95": [
+      -1.45,
+      -0.52
+     ]
+    },
+    "average": {
+     "diff": -1.11,
+     "ci95": [
+      -1.34,
+      -0.9
+     ]
+    }
+   },
+   "sygma-audar_fix": {
+    "sada_test": {
+     "diff": 5.3,
+     "ci95": [
+      4.21,
+      6.37
+     ]
+    },
+    "commonvoice_test": {
+     "diff": -2.87,
+     "ci95": [
+      -3.13,
+      -2.62
+     ]
+    },
+    "masc_test_clean": {
+     "diff": -1.24,
+     "ci95": [
+      -1.58,
+      -0.91
+     ]
+    },
+    "masc_test_noisy": {
+     "diff": -3.36,
+     "ci95": [
+      -4.19,
+      -2.55
+     ]
+    },
+    "mgb2_test": {
+     "diff": 1.53,
+     "ci95": [
+      0.38,
+      2.48
+     ]
+    },
+    "casablanca_test": {
+     "diff": -5.45,
+     "ci95": [
+      -5.95,
+      -4.96
+     ]
+    },
+    "average": {
+     "diff": -1.02,
+     "ci95": [
+      -1.33,
+      -0.72
+     ]
+    }
+   },
+   "beam_bonus-audar_fix": {
+    "sada_test": {
+     "diff": 5.38,
+     "ci95": [
+      4.31,
+      6.44
+     ]
+    },
+    "commonvoice_test": {
+     "diff": -2.87,
+     "ci95": [
+      -3.13,
+      -2.62
+     ]
+    },
+    "masc_test_clean": {
+     "diff": -1.24,
+     "ci95": [
+      -1.58,
+      -0.91
+     ]
+    },
+    "masc_test_noisy": {
+     "diff": -3.36,
+     "ci95": [
+      -4.19,
+      -2.55
+     ]
+    },
+    "mgb2_test": {
+     "diff": 1.53,
+     "ci95": [
+      0.38,
+      2.48
+     ]
+    },
+    "casablanca_test": {
+     "diff": -5.45,
+     "ci95": [
+      -5.95,
+      -4.96
+     ]
+    },
+    "average": {
+     "diff": -1.0,
+     "ci95": [
+      -1.32,
+      -0.7
+     ]
+    }
+   }
+  }
+ },
+ "examples_wer": {
+  "6k_v_SBA_187_1-seg_287_573-290_051": {
+   "greedy": 12.5,
+   "beam_bonus": 12.5,
+   "sygma": 12.5,
+   "audar_raw": 12.5,
+   "audar_fix": 12.5
+  },
+  "6k_SBA_116_0-seg_400_170-403_210": {
+   "greedy": 57.1,
+   "beam_bonus": 28.6,
+   "sygma": 28.6,
+   "audar_raw": 14.3,
+   "audar_fix": 14.3
+  },
+  "6k_v_SBA_32_3-seg_284_515-290_800": {
+   "greedy": 850.0,
+   "beam_bonus": 83.3,
+   "sygma": 83.3,
+   "audar_raw": 7333.3,
+   "audar_fix": 116.7
+  },
+  "6k_v_SBA_41_1-seg_133_300-152_850": {
+   "greedy": 607.1,
+   "beam_bonus": 100.0,
+   "sygma": 100.0,
+   "audar_raw": 1035.7,
+   "audar_fix": 92.9
+  }
+ },
+ "examples_reward_only_same_as_sygma": {
+  "6k_v_SBA_187_1-seg_287_573-290_051": true,
+  "6k_SBA_116_0-seg_400_170-403_210": true,
+  "6k_v_SBA_32_3-seg_284_515-290_800": true,
+  "6k_v_SBA_41_1-seg_133_300-152_850": false
+ },
+ "qwen_truncation": {
+  "unique_hypotheses": 368358,
+  "over_400_tokens": 0,
+  "over_400_degenerate": 0
+ }
+}

@@ -1,0 +1,7 @@
+transformers==4.57.6
+torch>=2.2
+soundfile
+librosa
+sentencepiece
+huggingface_hub
+numpy
